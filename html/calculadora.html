@@ -40,33 +40,33 @@
 
     <!-- Secção da Calculadora -->
     <main class="estatisticas">
-        <div class="grafico-card" style="max-width: 600px; margin: 0 auto; border-left-color: var(--dourado);">
+        <div class="grafico-card">
             <b>Simula a tua poupança</b>
             
-            <form id="form-calculadora" style="display: flex; flex-direction: column; gap: 15px; margin-top: 15px;">
+            <form id="form-calculadora">
                 <div>
-                    <label for="valor-conta" style="display: block; font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">Valor médio da tua fatura de luz mensal (R$):</label>
-                    <input type="number" id="valor-conta" placeholder="Ex: 300" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem;">
+                    <label for="valor-conta">Valor médio da tua fatura de luz mensal (R$):</label>
+                    <input type="number" id="valor-conta" placeholder="Ex: 300" required>
                 </div>
 
                 <div>
-                    <label for="desconto-porcentagem" style="display: block; font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">Desconto estimado da fazenda solar:</label>
-                    <select id="desconto-porcentagem" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; background-color: white;">
+                    <label for="desconto-porcentagem">Desconto estimado da fazenda solar:</label>
+                    <select id="desconto-porcentagem">
                         <option value="10">10% de desconto</option>
                         <option value="15" selected>15% de desconto</option>
                         <option value="20">20% de desconto</option>
                     </select>
                 </div>
 
-                <button type="button" id="btn-calcular" style="background-color: var(--laranja); color: white; border: none; padding: 12px; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: background-color 0.2s;">
+                <button type="button" id="btn-calcular">
                     Calcular Economia
                 </button>
             </form>
 
             <!-- Área onde o resultado vai aparecer -->
-            <div id="resultado-container" style="margin-top: 25px; padding: 15px; background-color: var(--bege); border-radius: 8px; display: none; text-align: center;">
-                <h3 style="color: var(--laranja-escuro); margin: 0 0 10px 0;">Estimativa de Poupança:</h3>
-                <p id="texto-economia" style="font-size: 1.1rem; margin: 0; color: var(--texto);"></p>
+            <div id="resultado-container">
+                <h3>Estimativa de Poupança:</h3>
+                <p id="texto-economia"></p>
             </div>
         </div>
     </main>
