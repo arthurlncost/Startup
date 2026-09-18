@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletricitrus - Calculadora de Economia</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/mascotinho.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="fazendas.html">Fazendas Solares ▾</a>
+                <ul class="submenu">
+                    <li><a href="fazendas.html">Visão Geral</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Parceiras &raquo;</a>
+                        <ul class="sub-submenu">
+                            <li><a href="#">SunnyHUB</a></li>
+                            <li><a href="#">Sun Mobi</a></li>
+                            <li><a href="#">EDP Smart</a></li>
+                            <li><a href="#">Compare Solar</a></li>
+                            <li><a href="#">Flora Energia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="placas.html">Placas Solares</a></li>
+            <li><a href="informacoes.html">Mais Informações</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+    </nav>
+
+    <div class="pagina-titulo">
+        <h1>Calculadora de Economia Solar</h1>
+        <p>Descobre quanto podes poupar na tua fatura mensal ao aderir a uma fazenda solar compartilhada, sem precisares de fazer obras[cite: 1].</p>
+    </div>
+
+    <!-- Secção da Calculadora -->
+    <main class="estatisticas">
+        <div class="grafico-card" style="max-width: 600px; margin: 0 auto; border-left-color: var(--dourado);">
+            <b>Simula a tua poupança</b>
+            
+            <form id="form-calculadora" style="display: flex; flex-direction: column; gap: 15px; margin-top: 15px;">
+                <div>
+                    <label for="valor-conta" style="display: block; font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">Valor médio da tua fatura de luz mensal (R$):</label>
+                    <input type="number" id="valor-conta" placeholder="Ex: 300" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem;">
+                </div>
+
+                <div>
+                    <label for="desconto-porcentagem" style="display: block; font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">Desconto estimado da fazenda solar:</label>
+                    <select id="desconto-porcentagem" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; background-color: white;">
+                        <option value="10">10% de desconto</option>
+                        <option value="15" selected>15% de desconto</option>
+                        <option value="20">20% de desconto</option>
+                    </select>
+                </div>
+
+                <button type="button" id="btn-calcular" style="background-color: var(--laranja); color: white; border: none; padding: 12px; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: background-color 0.2s;">
+                    Calcular Economia
+                </button>
+            </form>
+
+            <!-- Área onde o resultado vai aparecer -->
+            <div id="resultado-container" style="margin-top: 25px; padding: 15px; background-color: var(--bege); border-radius: 8px; display: none; text-align: center;">
+                <h3 style="color: var(--laranja-escuro); margin: 0 0 10px 0;">Estimativa de Poupança:</h3>
+                <p id="texto-economia" style="font-size: 1.1rem; margin: 0; color: var(--texto);"></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mascote com a fala para esta página -->
+    <div class="mascote-container">
+        <div class="balao-fala">
+            <span>Usa a minha calculadora para descobrires quanto dinheiro podes guardar todos os meses na conta de luz!</span>
+        </div>
+        <img src="../imagens/sol.png" alt="Mascote Eletricitrus" id="mascote-img">
+    </div>
+
+    <!-- Ligação ao ficheiro JavaScript externo -->
+    <script src="../js/calculadora.js"></script>
+</body>
+</html>
