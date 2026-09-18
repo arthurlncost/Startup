@@ -67,3 +67,32 @@ Startup/
 │   └── ... (imagens do mascote e logos)
 └── js/
     └── calculadora.js
+
+---
+
+## 🔧 Como Executar o Projeto
+
+- **Clona este repositório:**
+
+- git clone https://github.com/arthurlncost/Startup.git
+
+- **Navega até a pasta do projeto:**
+
+- cd Startup
+
+- **Abre no navegador:**
+
+- Navega até a pasta html/ e abre o ficheiro index.html em qualquer navegador web (Chrome, Edge, Firefox, etc.).
+
+---
+
+## 👥 Autores
+
+Desenvolvido por estudantes do curso de **Análise e Desenvolvimento de Sistemas (ADS) - Facens**:
+
+- **Ana Clara R. de Oliveira**
+- **Arthur Luciano N. da Costa**
+- **Giovanni Paulossi C. Dantas**
+- **Leonardo de Sousa L.**
+- **Tiago José R. Burani**
+- **Vitoria Carara C.**
