@@ -1,6 +1,6 @@
 # <img src="imagens/solzinho-emoji.png" width="38" align="center" alt="Eletricitrus Logo"> Eletricitrus - Portal de Energia Solar Assinada
 
-> **Projeto Sartup - Facens (Análise e Desenvolvimento de Sistemas)**
+> **Projeto Startup - Facens (Análise e Desenvolvimento de Sistemas)**
 
 O **Eletricitrus** é uma plataforma web voltada para o setor de energia solar fotovoltaica e sustentável. O objetivo do projeto é conectar consumidores a fazendas solares parceiras, oferecendo ferramentas interativas para cálculo de economia e conscientização ambiental através de uma identidade visual amigável e acessível.
 
