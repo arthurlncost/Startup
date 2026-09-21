@@ -122,40 +122,37 @@ Certifique-se de ter instalado em sua máquina:
 
 ### Passo a Passo
 
-#### Clonar o repositório:
 
-    ```bash
+#### Clonar o repositório:
+```bash
 git clone https://github.com/arthurlncost/Startup.git
-    ```
+```
 
 #### Acessar a pasta do projeto:
-    ```bash
-
+```bash
 cd Startup
-    ```
+```
 
 #### Instalar as dependências:
-        ```bash
-
-    npm install
-        ```
+```bash
+npm install
+```
 
 #### Executar o servidor de desenvolvimento:
-    ```bash
-
+```bash
 npm run dev
-    ```
+```
 
 #### Acessar a aplicação no navegador:
-    Abra a URL indicada no terminal (geralmente http://localhost:5173/).
+Abra a URL indicada no terminal (geralmente http://localhost:5173/).
 
 ## 🧪 Testes de Qualidade
 
 ### Para rodar a suíte de testes unitários do projeto:
-    ```bash
+```bash
 
 npm run test
-    ```
+```
 
 ---
 
