@@ -1,4 +1,4 @@
-# <img src="imagens/solzinho-emoji.png" width="38" align="center" alt="Eletricitrus Logo"> Eletricitrus - Portal de Energia Solar Assinada
+# <img src="public/logo.png" width="38" align="center" alt="Eletricitrus Logo"> Eletricitrus - Portal de Energia Solar Assinada
 
 > **Projeto Startup - Facens (Análise e Desenvolvimento de Sistemas)**
 
@@ -9,8 +9,8 @@ O **Eletricitrus** é uma plataforma web voltada para o setor de energia solar f
 ## 🚀 Funcionalidades Principais
 
 - 📊 **Calculadora de Economia:** Estimativa personalizada de economia mensal e anual com energia solar.
-- ☀️ **Mascote Interativo ("Sem nome definido"):** Experiência guiada e amigável para engajamento do usuário.
-- 🏞️ **Catálogo de Fazendas Solares:** Exibição detalhada e comparativo de parceiras (...).
+- ☀️ **Mascote Interativo ("Solzinho"):** Experiência guiada e amigável para engajamento do usuário.
+- 🏞️ **Catálogo de Fazendas Solares:** Exibição detalhada e comparativo de parceiras.
 - 🏷️ **Guia de Placas Solares:** Informações técnicas e educativas sobre tecnologia fotovoltaica.
 ---
 
@@ -44,7 +44,7 @@ O **Eletricitrus** é uma plataforma web voltada para o setor de energia solar f
 
 ### Back-end & Banco de Dados (BaaS)
 - **Supabase**: Plataforma Backend-as-a-Service (BaaS) responsável por:
-  - **Autenticação**: Gestão de acessos e logins de utilizadores.
+  - **Autenticação**: Gestão de acessos e logins de usuários.
   - **PostgreSQL Database**: Persistência de dados de perfis, simulações salvas e histórico de orçamentos.
 
 ### Integrações & APIs Externas
@@ -125,25 +125,25 @@ Certifique-se de ter instalado em sua máquina:
 #### Clonar o repositório:
 
     ```bash
-    git clone https://github.com/arthurlncost/Startup.git
+git clone https://github.com/arthurlncost/Startup.git
     ```
 
 #### Acessar a pasta do projeto:
     ```bash
 
-    cd Startup
+cd Startup
     ```
 
 #### Instalar as dependências:
-    ```bash
+        ```bash
 
     npm install
-    ```
+        ```
 
 #### Executar o servidor de desenvolvimento:
     ```bash
 
-    npm run dev
+npm run dev
     ```
 
 #### Acessar a aplicação no navegador:
@@ -154,7 +154,7 @@ Certifique-se de ter instalado em sua máquina:
 ### Para rodar a suíte de testes unitários do projeto:
     ```bash
 
-    npm run test
+npm run test
     ```
 
 ---
