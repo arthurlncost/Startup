@@ -1,4 +1,4 @@
-# <img src="public/logo.png" width="38" align="center" alt="Eletricitrus Logo"> Eletricitrus - Portal de Energia Solar Assinada
+# <img src="imagens/solzinho-emoji.png" width="38" align="center" alt="Eletricitrus Logo"> Eletricitrus - Portal de Energia Solar Assinada
 
 > **Projeto Startup - Facens (Análise e Desenvolvimento de Sistemas)**
 
@@ -9,10 +9,9 @@ O **Eletricitrus** é uma plataforma web voltada para o setor de energia solar f
 ## 🚀 Funcionalidades Principais
 
 - 📊 **Calculadora de Economia:** Estimativa personalizada de economia mensal e anual com energia solar.
-- ☀️ **Mascote Interativo ("Solzinho"):** Experiência guiada e amigável para engajamento do usuário.
-- 🏞️ **Catálogo de Fazendas Solares:** Exibição detalhada e comparativo de parceiras.
+- ☀️ **Mascote Interativo ("Sem nome definido"):** Experiência guiada e amigável para engajamento do usuário.
+- 🏞️ **Catálogo de Fazendas Solares:** Exibição detalhada e comparativo de parceiras (...).
 - 🏷️ **Guia de Placas Solares:** Informações técnicas e educativas sobre tecnologia fotovoltaica.
-
 ---
 
 ## 🎨 Identidade Visual e UI/UX
@@ -45,7 +44,7 @@ O **Eletricitrus** é uma plataforma web voltada para o setor de energia solar f
 
 ### Back-end & Banco de Dados (BaaS)
 - **Supabase**: Plataforma Backend-as-a-Service (BaaS) responsável por:
-  - **Autenticação**: Gestão de acessos e logins de usuários.
+  - **Autenticação**: Gestão de acessos e logins de utilizadores.
   - **PostgreSQL Database**: Persistência de dados de perfis, simulações salvas e histórico de orçamentos.
 
 ### Integrações & APIs Externas
@@ -116,50 +115,47 @@ Eletricitrus/
 ### Pré-requisitos
 
 Certifique-se de ter instalado em sua máquina:
+
 - **Node.js** (versão 18.x ou superior)
 - **npm** ou **yarn**
 - **Git**
 
 ### Passo a Passo
 
-1. **Clonar o repositório:**
-   ```bash
-   git clone https://github.com
-   ```
+#### Clonar o repositório:
 
-2. **Acessar a pasta do projeto:**
-   ```bash
-   cd Startup
-   ```
+    ```bash
+    git clone https://github.com/arthurlncost/Startup.git
+    ```
 
-3. **Configurar as variáveis de ambiente:**
-   Crie um arquivo `.env` na raiz do projeto e adicione as suas credenciais do Supabase (use as chaves do seu arquivo `.env.example` caso exista):
-   ```env
-   VITE_SUPABASE_URL=sua_url_do_supabase
-   VITE_SUPABASE_ANON_KEY=sua_chave_anon_do_supabase
-   ```
+#### Acessar a pasta do projeto:
+    ```bash
 
-4. **Instalar as dependências:**
-   ```bash
-   npm install
-   ```
+    cd Startup
+    ```
 
-5. **Executar o servidor de desenvolvimento:**
-   ```bash
-   npm run dev
-   ```
+#### Instalar as dependências:
+    ```bash
 
-6. **Acessar a aplicação no navegador:**
-   Abra a URL indicada no terminal (geralmente `http://localhost:5173/`).
+    npm install
+    ```
 
----
+#### Executar o servidor de desenvolvimento:
+    ```bash
+
+    npm run dev
+    ```
+
+#### Acessar a aplicação no navegador:
+    Abra a URL indicada no terminal (geralmente http://localhost:5173/).
 
 ## 🧪 Testes de Qualidade
 
-Para rodar a suíte de testes unitários do projeto:
-```bash
-npm run test
-```
+### Para rodar a suíte de testes unitários do projeto:
+    ```bash
+
+    npm run test
+    ```
 
 ---
 
@@ -167,9 +163,11 @@ npm run test
 
 Desenvolvido por estudantes do curso de **Análise e Desenvolvimento de Sistemas (ADS) - Facens**:
 
-- [Ana Clara R. de Oliveira](https://github.com)
-- [Arthur Luciano N. da Costa](https://github.comarthurlncost)
-- [Giovanni Paulossi C. Dantas](https://github.com)
-- [Leonardo de Sousa L.](https://github.com)
-- [Tiago José R. Burani](https://github.com)
-- [Vitoria Carara C.](https://github.com)
+- **Ana Clara R. de Oliveira**
+- **Arthur Luciano N. da Costa**
+- **Giovanni Paulossi C. Dantas**
+- **Leonardo de Sousa L.**
+- **Tiago José R. Burani**
+- **Vitoria Carara C.**
+
+---
