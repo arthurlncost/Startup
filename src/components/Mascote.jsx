@@ -1,0 +1,20 @@
+export default function Mascote({ tipo = 'padrao', largura = 120, alt = 'Solzinho Eletricitrus' }) {
+  // Mapeamento das imagens
+  const fotos = {
+    padrao: '/imagens/sol.png',
+    logo: '/logo.png',
+    emoji: '/imagens/solzinho-emoji.png',
+    coracao: '/imagens/solCoracaoplaquinh.png',
+    pedreiro: '/imagens/solPedreiro.png'
+  };
+
+  const caminhoImagem = fotos[tipo] || fotos.padrao;
+
+  return (
+    <img 
+      src={caminhoImagem} 
+      alt={alt} 
+      style={{ width: `${largura}px`, height: 'auto', objectFit: 'contain' }} 
+    />
+  );
+}

@@ -1,0 +1,138 @@
+.navbar-container {
+  background-color: #1B1712;
+  border-bottom: 2px solid #D9A441;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo e Mascote */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.navbar-logo-img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.navbar-brand:hover .navbar-logo-img {
+  transform: scale(1.1) rotate(6deg);
+}
+
+.navbar-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #FBF7EE;
+  letter-spacing: -0.5px;
+}
+
+.navbar-title .highlight {
+  color: #D9A441;
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #FBF7EE;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.1rem;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: #D9A441;
+}
+
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #D9A441;
+  border-radius: 2px;
+}
+
+/* Botão Entrar */
+.nav-btn-login {
+  text-decoration: none;
+  background-color: #C1560C;
+  color: #FFFFFF;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.nav-btn-login:hover {
+  background-color: #96420A;
+  transform: translateY(-1px);
+}
+
+/* Responsividade Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #FBF7EE;
+  border-radius: 2px;
+}
+
+@media (max-width: 880px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1B1712;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    gap: 1.2rem;
+    border-bottom: 2px solid #D9A441;
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}

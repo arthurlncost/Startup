@@ -1,0 +1,13 @@
+https://econacional.com.br/
+https://solaritima.com.br/
+https://suntera.com.br/
+https://evosolar.com.br/unidades/energia-solar-em-sorocaba-sp
+https://www.mastersol.com.br/
+https://mitratech.com.br/
+https://ecopower.com.br/energia-solar/sp/sorocaba
+https://coteibem.sindiconet.com.br/fornecedores/energia-solar-fotovoltaica/sp/sorocaba
+https://grupofusion.com.br/
+https://www.plugsistemas.eng.br/?srsltid=AU7gw4XHXC-lfMP9hpMA_Uvbjk32gMvN5h8jaGbm87QBazHoXXJbU3nW
+https://portalsustentabilidade.com/
+https://www.portalsolar.com.br/noticias
+https://www.intelbras.com/pt-br/energia-solar/residencial-empresarial
