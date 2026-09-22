@@ -96,6 +96,18 @@ O **Eletricitrus** é uma plataforma web voltada para o setor de energia solar f
 Eletricitrus/
 ├── public/
 │   ├── imagens/          # Imagens do Solzinho e identidade visual
+<<<<<<< HEAD
+│   └── logo.png          # Logo do Eletricitrus
+│
+├── src/
+│   ├── assets/           # Imagens e recursos utilizados pela aplicação
+│   ├── components/       # Componentes React reutilizáveis (Navbar, Footer, etc.)
+│   ├── pages/            # Páginas/telas principais da aplicação
+│   │   ├── partners/     # Páginas individuais das marcas parceiras (SunMobi, EDP, etc.)
+│   │   └── servicetypes/ # Categorias de placas solares (Vendas, Manutenção, Descarte)
+│   ├── services/         # Serviços e integrações externas (ex: API ViaCEP)
+│   ├── styles/           # Arquivos de estilização adicionais
+=======
 │   └── logo.png         # Logo do Eletricitrus
 │
 ├── src/
@@ -104,6 +116,7 @@ Eletricitrus/
 │   ├── pages/            # Páginas/telas da aplicação
 │   ├── services/         # Serviços e integrações externas
 │   ├── styles/           # Arquivos de estilização
+>>>>>>> origin/master
 │   ├── utils/            # Funções auxiliares e regras de negócio
 │   ├── App.css           # Estilos do componente principal
 │   ├── App.jsx           # Componente principal e configuração das rotas
@@ -163,10 +176,10 @@ Abra a URL indicada no terminal (geralmente http://localhost:5173/).
 
 Desenvolvido por estudantes do curso de **Análise e Desenvolvimento de Sistemas (ADS) - Facens**:
 
-- [Ana Clara R. de Oliveira](https://github.com/)
+- [Ana Clara R. de Oliveira](https://github.com/ana-0901)
 - [Arthur Luciano N. da Costa](https://github.com/arthurlncost)
 - [Giovanni Paulossi C. Dantas](https://github.com/giovanni-gijo)
-- [Leonardo de Sousa L.](https://github.com/)
+- [Leonardo de Sousa L.]()
 - [Tiago José R. Burani](https://github.com/tiagoburani4-design)
 - [Vitoria Carara C.](https://github.com/vitocaracesar-ads)
 

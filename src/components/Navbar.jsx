@@ -4,8 +4,14 @@ import './Navbar.css';
 
 export default function Navbar() {
   const [menuAberto, setMenuAberto] = useState(false);
+  const [dropdownAberto, setDropdownAberto] = useState(false); // Estado para Fazendas
+  const [dropdownAbertoPlacas, setDropdownAbertoPlacas] = useState(false); // Estado para Placas
 
-  const fecharMenu = () => setMenuAberto(false);
+  const fecharMenu = () => {
+    setMenuAberto(false);
+    setDropdownAberto(false);
+    setDropdownAbertoPlacas(false);
+  };
 
   return (
     <header className="navbar-container">
@@ -35,10 +41,56 @@ export default function Navbar() {
         <nav className={`navbar-links ${menuAberto ? 'active' : ''}`}>
           <NavLink to="/" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'} onClick={fecharMenu}>Início</NavLink>
           <NavLink to="/calculadora" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'} onClick={fecharMenu}>Calculadora</NavLink>
-          <NavLink to="/placas" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'} onClick={fecharMenu}>Placas</NavLink>
-          <NavLink to="/fazendas" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'} onClick={fecharMenu}>Fazendas Solares</NavLink>
+          
+          {/* Menu Híbrido: Fazendas Solares */}
+          <div className="dropdown-container-split" style={{ display: 'flex', alignItems: 'center' }}>
+            <NavLink to="/fazendas" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'} onClick={fecharMenu}>
+              Fazendas Solares
+            </NavLink>
+            
+            <div className="dropdown" onMouseLeave={() => setDropdownAberto(false)} style={{ marginLeft: '4px' }}>
+              <span 
+                className="dropdown-toggle" 
+                onClick={() => setDropdownAberto(!dropdownAberto)}
+                style={{ cursor: 'pointer', padding: '0.3rem', color: '#FBF7EE' }}
+              >
+                ▾
+              </span>
+              <ul className={`dropdown-menu ${dropdownAberto ? 'show' : ''}`}>
+                <li><span style={{ fontSize: '0.8rem', color: '#D9A441', padding: '0.2rem 1rem', display: 'block' }}>Parceiros:</span></li>
+                <li><NavLink to="/partners/sunmobi" className="nav-item" onClick={fecharMenu}>SunMobi</NavLink></li>
+                <li><NavLink to="/partners/enerlivre" className="nav-item" onClick={fecharMenu}>Enerlivre</NavLink></li>
+                <li><NavLink to="/partners/evosolar" className="nav-item" onClick={fecharMenu}>EvoSolar</NavLink></li>
+                <li><NavLink to="/partners/edp" className="nav-item" onClick={fecharMenu}>EDP Soluções</NavLink></li>
+              </ul>
+            </div>
+          </div>
+          
+          {/* Menu Híbrido: Placas Solares */}
+          <div className="dropdown-container-split" style={{ display: 'flex', alignItems: 'center' }}>
+            <NavLink to="/placas" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'} onClick={fecharMenu}>
+              Placas Solares
+            </NavLink>
+            
+            <div className="dropdown" onMouseLeave={() => setDropdownAbertoPlacas(false)} style={{ marginLeft: '4px' }}>
+              <span 
+                className="dropdown-toggle" 
+                onClick={() => setDropdownAbertoPlacas(!dropdownAbertoPlacas)}
+                style={{ cursor: 'pointer', padding: '0.3rem', color: '#FBF7EE' }}
+              >
+                ▾
+              </span>
+              <ul className={`dropdown-menu ${dropdownAbertoPlacas ? 'show' : ''}`}>
+                <li><span style={{ fontSize: '0.8rem', color: '#D9A441', padding: '0.2rem 1rem', display: 'block' }}>Categorias:</span></li>
+                <li><NavLink to="/partners/venda" className="nav-item" onClick={fecharMenu}>Comprar / Venda</NavLink></li>
+                <li><NavLink to="/partners/manutencao" className="nav-item" onClick={fecharMenu}>Manutenção</NavLink></li>
+                <li><NavLink to="/partners/descarte" className="nav-item" onClick={fecharMenu}>Descarte & Reciclagem</NavLink></li>
+              </ul>
+            </div>
+          </div>
+
           <NavLink to="/servicos" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'} onClick={fecharMenu}>Serviços & CEP</NavLink>
-          <NavLink to="/faq" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'} onClick={fecharMenu}>Blog / FAQ</NavLink>
+          <NavLink to="/faq" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'} onClick={fecharMenu}>FAQ</NavLink>
           <NavLink to="/login" className="nav-btn-login" onClick={fecharMenu}>Entrar</NavLink>
         </nav>
       </div>
