@@ -17,7 +17,6 @@ import Enerlivre from './pages/partners/Enerlivre';
 import Evosolar from './pages/partners/Evosolar';
 import Sunmobi from './pages/partners/Sunmobi';
 import Sunnyhub from './pages/partners/Sunnyhub';
-
 import Descarte from './pages/servicetypes/Descarte';
 import Vendas from './pages/servicetypes/Vendas';
 import Manutencao from './pages/servicetypes/Manutencao';
