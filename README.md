@@ -96,7 +96,6 @@ O **Eletricitrus** é uma plataforma web voltada para o setor de energia solar f
 Eletricitrus/
 ├── public/
 │   ├── imagens/          # Imagens do Solzinho e identidade visual
-<<<<<<< HEAD
 │   └── logo.png          # Logo do Eletricitrus
 │
 ├── src/
@@ -104,19 +103,9 @@ Eletricitrus/
 │   ├── components/       # Componentes React reutilizáveis (Navbar, Footer, etc.)
 │   ├── pages/            # Páginas/telas principais da aplicação
 │   │   ├── partners/     # Páginas individuais das marcas parceiras (SunMobi, EDP, etc.)
-│   │   └── servicetypes/ # Categorias de placas solares (Vendas, Manutenção, Descarte)
+│   │   └── servicetypes/ # Categorias de serviços (Vendas, Manutenção, Descarte)
 │   ├── services/         # Serviços e integrações externas (ex: API ViaCEP)
 │   ├── styles/           # Arquivos de estilização adicionais
-=======
-│   └── logo.png         # Logo do Eletricitrus
-│
-├── src/
-│   ├── assets/           # Imagens e recursos utilizados pela aplicação
-│   ├── components/       # Componentes React reutilizáveis
-│   ├── pages/            # Páginas/telas da aplicação
-│   ├── services/         # Serviços e integrações externas
-│   ├── styles/           # Arquivos de estilização
->>>>>>> origin/master
 │   ├── utils/            # Funções auxiliares e regras de negócio
 │   ├── App.css           # Estilos do componente principal
 │   ├── App.jsx           # Componente principal e configuração das rotas

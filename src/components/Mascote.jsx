@@ -3,9 +3,10 @@ export default function Mascote({ tipo = 'padrao', largura = 120, alt = 'Solzinh
   const fotos = {
     padrao: '/imagens/sol.png',
     logo: '/logo.png',
-    emoji: '/imagens/solzinho-emoji.png',
     coracao: '/imagens/solCoracaoplaquinh.png',
-    pedreiro: '/imagens/solPedreiro.png'
+    pedreiro: '/imagens/solPedreiro.png',
+    pensador: '/imagens/solFilosofo.png',
+    carregando: '/imagens/solPlaca.png'
   };
 
   const caminhoImagem = fotos[tipo] || fotos.padrao;

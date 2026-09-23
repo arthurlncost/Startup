@@ -4,7 +4,7 @@ import Mascote from './Mascote';
 export default function AssistenteMascote() {
   const location = useLocation();
 
-  // 1. Definimos as páginas oficiais onde o assistente deve aparecer
+  // 1. páginas oficiais onde o assistente deve aparecer
   const rotasValidas = [
     '/', 
     '/calculadora', 
@@ -20,22 +20,21 @@ export default function AssistenteMascote() {
     return null; 
   }
 
-  // 3. Se for uma página válida, continua com o comportamento normal
   let mensagem = "";
   let tipoMascote = "padrao";
 
   switch (location.pathname) {
     case '/':
-      mensagem = "Bem-vindo ao Eletricitrus! Que tal simularmos a sua economia?";
+      mensagem = "Bem-vindo ao Eletricitrus! Bora entender a energia solar e espremer essa sua conta de luz?";
       tipoMascote = "padrao";
       break;
     case '/calculadora':
-      mensagem = "Preencha o seu consumo e descubra o quanto pode poupar!";
+      mensagem = "Preencha o seu consumo e descubra o quanto pode economizar!";
       tipoMascote = "padrao";
       break;
     case '/placas':
-      mensagem = "Conheça as nossas opções de painéis fotovoltaicos.";
-      tipoMascote = "padrao";
+      mensagem = "Ai, as minhas costas... eu não sou esse tipo de carregador! Melhor deixar isso para os nossos parceiros especializados.";
+      tipoMascote = "carregando";
       break;
     case '/fazendas':
       mensagem = "Descubra as fazendas solares parceiras na sua região.";
@@ -46,14 +45,15 @@ export default function AssistenteMascote() {
       tipoMascote = "padrao";
       break;
     case '/faq':
-      mensagem = "Tem alguma dúvida? Encontre as respostas aqui!";
-      tipoMascote = "padrao";
+      mensagem = "Tem alguma dúvida? Manda para mim.";
+      tipoMascote = "pensador";
       break;
     case '/login':
-      mensagem = "Faça login para guardar o seu histórico de simulações.";
+      mensagem = "Faça login para salvar o seu histórico de simulações e ter acesso a funções mais práticas.";
       tipoMascote = "padrao";
       break;
   }
+
 
   return (
     <div className="mascote-fixo-container">
