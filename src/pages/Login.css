@@ -1,0 +1,87 @@
+/* Container principal da página de login */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+  background-color: #121212; /* Mantém a paleta escura do site */
+  color: #FBF7EE;
+}
+
+/* Caixa central do formulário */
+.login-container {
+  background-color: #1E1E1E;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #333;
+}
+
+.login-form h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: #FBF7EE;
+  text-align: center;
+}
+
+.login-form p {
+  margin-bottom: 2rem;
+  color: #A0A0A0;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Agrupamento de cada campo */
+.input-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #D9A441; /* Tom amarelado da identidade */
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 0.75rem 1rem;
+  background-color: #2A2A2A;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #FBF7EE;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #D9A441;
+}
+
+/* Botão de submissão */
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #D9A441;
+  color: #121212;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.login-btn:hover {
+  background-color: #c49133;
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
