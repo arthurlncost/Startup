@@ -66,3 +66,31 @@
 .endereco-card h3 {
   margin-top: 0;
 }
+
+.empresas-card {
+  margin-top: 20px;
+  padding: 24px;
+  background-color: #f7f0e4;
+  border-left: 4px solid #e5a323;
+  border-radius: 10px;
+}
+
+.empresas-card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.empresa-item {
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #fffaf2;
+  border-radius: 8px;
+}
+
+.empresa-item h4 {
+  margin: 0 0 10px 0;
+}
+
+.empresa-item p {
+  margin: 5px 0;
+}

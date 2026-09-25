@@ -1,15 +1,40 @@
 import React, { useState } from 'react';
+import { supabase } from "../services/supabase";
 import './Login.css';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [mensagem, setMensagem] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("A tentar autenticar o utilizador:", email);
-    // Aqui entrará a lógica de ligação à API no futuro
-  };
+    const { data, error } = await supabase.auth.signInWithPassword({//gnifica que estamos usando o sistema de autenticação do Supabase. // “Supabase, tente fazer login usando e-mail e senha.”
+      email: email,
+      password: password
+    });
+
+    if (error) {
+     setMensagem("E-mail ou senha inválidos.");
+     return;
+   }
+
+    setMensagem("Login realizado com sucesso!");
+   };
+
+  /* logica 
+  Clicou em "Entrar"
+        ↓
+handleSubmit()
+        ↓
+manda email + password
+        ↓
+      Supabase
+      ↙      ↘
+   error      data
+     ↓          ↓
+  deu ruim    login OK*/
 
   return (
     <div className="login-page">
@@ -39,6 +64,9 @@ export default function Login() {
               required
             />
           </div>
+            {mensagem && (
+             <p>{mensagem}</p>
+            )}
 
           <button type="submit" className="login-btn">Entrar</button>
         </form>
