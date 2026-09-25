@@ -1,0 +1,138 @@
+.home-container {
+  color: #FBF7EE;
+  background-color: #121212;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero-title {
+  color: #D9A441;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #CCCCCC;
+  max-width: 650px;
+  margin: 0.8rem auto 0;
+}
+
+/* Secções Gerais */
+.info-section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.info-section h2, .ods-section h2 {
+  color: #FBF7EE;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #D9A441;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Passos - Como Funciona */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.step-card {
+  background-color: #1E1E1E;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.step-number {
+  background-color: #C1560C;
+  color: #FFF;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+}
+
+/* Vantagens Grid */
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.advantage-card {
+  background-color: #1B1712;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(217, 164, 65, 0.3);
+  text-align: center;
+}
+
+.adv-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.advantage-card h4 {
+  color: #D9A441;
+  margin-bottom: 0.5rem;
+}
+
+/* ODS Section */
+.ods-section {
+  text-align: center;
+  background-color: #1E1E1E;
+  padding: 2.5rem 1.5rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+}
+
+.ods-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.ods-badge {
+  background-color: #2A2A2A;
+  border-left: 4px solid #D9A441;
+  padding: 1rem;
+  border-radius: 6px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ods-badge strong {
+  color: #D9A441;
+  font-size: 1.1rem;
+}
+
+.ods-badge span {
+  font-size: 0.85rem;
+  color: #DDD;
+  margin-top: 0.2rem;
+  text-align: left;
+}
