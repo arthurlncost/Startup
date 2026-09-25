@@ -1,0 +1,208 @@
+.navbar-container {
+  background-color: #121212;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(217, 164, 65, 0.2);
+}
+
+.navbar-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- Brand / Logo --- */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.navbar-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #FBF7EE;
+  letter-spacing: 0.5px;
+}
+
+.navbar-title .highlight {
+  color: #D9A441; /* Destaque tom solar */
+}
+
+/* --- Estilos do Dropdown --- */
+.dropdown-container-split {
+  display: flex;
+  align-items: center;
+  position: relative; /* Ancora o menu suspenso para ele alinhar perfeitamente com a palavra inteira */
+}
+
+.dropdown {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  transition: color 0.2s ease;
+}
+
+.dropdown-toggle:hover {
+  color: #D9A441;
+}
+
+/* O Menu Suspenso (escondido por padrão) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1B1712;
+  min-width: 200px; /* Um pouco mais largo para os nomes das marcas caberem bem */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  list-style: none;
+  padding: 0.5rem 0;
+  z-index: 100;
+  border: 1px solid rgba(217, 164, 65, 0.3);
+}
+
+/* Itens dentro do dropdown */
+.dropdown-menu li {
+  padding: 0.1rem 1rem;
+}
+
+.dropdown-menu .nav-item {
+  display: block;
+  width: 100%;
+  padding: 0.4rem 0;
+}
+
+.dropdown-menu li:hover {
+  background-color: rgba(217, 164, 65, 0.1);
+}
+
+/* Comportamento de Hover para Computador */
+@media (min-width: 881px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Comportamento para Mobile (quando a classe .show é ativada via clique) */
+.dropdown-menu.show {
+  display: block;
+  position: static; 
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  box-shadow: none;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #FBF7EE;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.3rem 0.1rem;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: #D9A441;
+}
+
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #D9A441;
+  border-radius: 2px;
+}
+
+/* Botão Entrar */
+.nav-btn-login {
+  text-decoration: none;
+  background-color: #C1560C;
+  color: #FFFFFF;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.nav-btn-login:hover {
+  background-color: #96420A;
+  transform: translateY(-1px);
+}
+
+/* Responsividade Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #FBF7EE;
+  border-radius: 2px;
+}
+
+@media (max-width: 880px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1B1712;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    gap: 1.2rem;
+    border-bottom: 2px solid #D9A441;
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
