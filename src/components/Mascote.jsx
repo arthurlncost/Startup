@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './Mascote.css';
 
 export default function Mascote({ tipo = 'padrao', largura = 120, alt = 'Solzinho Eletricitrus', mensagem }) {
   const [mostrarBalao, setMostrarBalao] = useState(true);
