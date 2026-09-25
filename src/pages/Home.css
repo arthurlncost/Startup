@@ -1,11 +1,3 @@
-.home-container {
-  color: #FBF7EE;
-  background-color: #121212;
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 /* Hero Section */
 .hero-section {
   text-align: center;
@@ -21,7 +13,7 @@
 
 .hero-subtitle {
   font-size: 1.2rem;
-  color: #CCCCCC;
+  color: var(--laranja-escuro);
   max-width: 650px;
   margin: 0.8rem auto 0;
 }
@@ -33,7 +25,7 @@
 }
 
 .info-section h2, .ods-section h2 {
-  color: #FBF7EE;
+  color: var(--carvao);
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #D9A441;
@@ -79,7 +71,7 @@
 }
 
 .advantage-card {
-  background-color: #1B1712;
+  background-color: var(--texto-escuro);
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid rgba(217, 164, 65, 0.3);
@@ -115,8 +107,8 @@
 }
 
 .ods-badge {
-  background-color: #2A2A2A;
-  border-left: 4px solid #D9A441;
+  background-color: var(--bege);
+  border-left: 4px solid var(--laranja);
   padding: 1rem;
   border-radius: 6px;
   min-width: 200px;
@@ -126,13 +118,22 @@
 }
 
 .ods-badge strong {
-  color: #D9A441;
+  color: var(--dourado);
   font-size: 1.1rem;
 }
 
 .ods-badge span {
   font-size: 0.85rem;
-  color: #DDD;
+  color: var(--texto-escuro);
   margin-top: 0.2rem;
   text-align: left;
+}
+:root {
+  --carvao: #1B1712;
+  --bege: #F6EFE2;
+  --bege-claro: #FBF7EE;
+  --texto-escuro: #241F18;
+  --dourado: #D9A441;
+  --laranja: #C1560C;
+  --laranja-escuro: #96420A;
 }
